@@ -446,7 +446,7 @@ body.dark-mode .sun-icon {
     box-shadow: 0 0 0 3px var(--input-border)
 }
 
-/* Optional: Hover effect */
+/*Hover effect */
 .priority-dropdown:hover {
     background: linear-gradient(135deg, var(--filter-btn-text), var(--input-border));
 }
