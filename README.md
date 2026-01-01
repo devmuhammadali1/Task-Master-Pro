@@ -12,7 +12,7 @@ A feature-packed todo app built from scratch with vanilla JavaScript. This proje
 - **Local storage** to remember everything
 
 ## 🚀 Live Demo
-taskmaster-pro-app.netlify.app
+ https://taskmaster-pro-app.netlify.app/
 
 ## 🛠 Built With
 - **HTML5** - Semantic structure
