@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <!-- features list -->
+
+        <button class="features-btn">Features</button>
+
+        <div class="features-list1">
+          <div class="confirm-overlay2">
+            <div class="features-list2">
+              <img class="close-btn" src="close.png" alt="" srcset="" />
+              <ul>
+                <li>Double-Click On Task Text To Edit.</li>
+                <li>For Task Priority: 🟢Low 🟡Medium 🔴High.</li>
+                <li>Hold '≡' Or 'Task' To Drag Task.</li>
+                <li>Undo: Reverses Our Most Recent Change Or Action.</li>
+                <li>
+                  Redo: Restores The Last Action That You Had Previously Undone.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Theme change -->
+        <label class="theme-switch" aria-label="Toggle dark mode">
+          <input type="checkbox" id="themeToggle" />
+          <div class="switch-background">
+            <div class="switch-handle">
+              <div class="sun-icon">☀️</div>
+              <div class="moon-icon">🌙</div>
+            </div>
+          </div>
+        </label>
+        <h1>🎯 TaskMaster Pro</h1>
+        <p>Organize your life, one task at a time</p>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Add Task Section -->
+        <section class="add-task">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What needs to be done?"
+            class="task-input"
+          />
+          <button id="addTaskBtn" class="add-btn">Add Task</button>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </section>
+
+        <!-- Tasks List -->
+        <div class="popup-display">
+          <div class="confirm-overlay">
+            <div class="confirm-popup">
+              <p>Save changes?</p>
+              <div class="confirm-buttons">
+                <button class="save-btn">Save</button>
+                <button class="cancel-btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="priority-container">
+          <select name="" id="Priority" class="priority-dropdown">
+            <option value="All">All</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <section class="tasks-list" id="tasksList"></section>
+        <div class="undo-redo">
+          <button class="undo add-btn">Undo</button>
+          <button class="redo add-btn">Redo</button>
+        </div>
+      </main>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <span class="task-counter">
+          <span id="taskCounter">0</span> tasks remaining</span
+        >
+
+        <button class="clear-completed" id="clearCompleted">
+          Clear completed
+        </button>
+      </footer>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
