@@ -1,3 +1,4 @@
+(Have made the README with the help of the AI)
 # TaskMaster Pro 🎯
 
 A feature-packed todo app built from scratch with vanilla JavaScript. This project helped me master DOM manipulation, state management, and other essential concepts.
